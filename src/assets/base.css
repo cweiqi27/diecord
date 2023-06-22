@@ -1,18 +1,20 @@
 :root {
-  --c-primary: #00ff7f;
-  --c-secondary: #210804;
+  --c-primary: #ffff00;
+  --c-secondary: #5a355d;
 }
 
 /* semantic color variables for this project */
 :root {
   --color-background: var(--c-primary);
   --color-border: var(--c-secondary);
+  --color-text: var(--c-secondary);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --color-background: var(--c-secondary);
     --color-border: var(--c-primary);
+    --color-text: var(--c-primary);
   }
 }
 

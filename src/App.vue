@@ -1,15 +1,18 @@
 <script setup lang="ts">
 import AddParticipant from './components/AddParticipant.vue'
+import ParticipantList from './components/ParticipantList.vue'
 </script>
 
 <template>
   <header>
-    <div class="wrapper">
-      <AddParticipant />
-    </div>
+    <h1 class="title">DIECORD</h1>
   </header>
 
-  <main></main>
+  <main>
+    <AddParticipant />
+  </main>
+
+  <ParticipantList />
 </template>
 
 <style scoped>
@@ -17,15 +20,15 @@ header {
   line-height: 1.5;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.title {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--color-text);
 }
 
 @media (min-width: 1024px) {
   header {
     display: flex;
-    place-items: center;
     padding-right: calc(var(--section-gap) / 2);
   }
 
