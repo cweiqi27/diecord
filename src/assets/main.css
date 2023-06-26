@@ -5,8 +5,10 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+}
 
-  font-weight: normal;
+#app > * + * {
+  margin: 2rem 0;
 }
 
 @media (min-width: 1024px) {
@@ -17,7 +19,8 @@
 
   #app {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
+    grid-template-columns: 480px 1fr;
+    padding: 0;
+    gap: 2rem;
   }
 }
